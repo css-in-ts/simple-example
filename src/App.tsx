@@ -1,3 +1,10 @@
 import React, { FC } from "react";
 
-export const App: FC = () => <div>Welcome to CSS-in-ts</div>;
+import { ChariotSlide } from "./components/ChariotSlide";
+import { ThingAMaBob } from "./components/ThingAMaBob";
+
+export const App: FC = () => (
+  <ChariotSlide title="Welcome to our Simple Example">
+    <ThingAMaBob />
+  </ChariotSlide>
+);
